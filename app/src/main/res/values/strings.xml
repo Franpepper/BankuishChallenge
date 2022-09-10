@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BankuishChallenge</string>
+    <string name="name">Name</string>
+    <string name="author">Author</string>
+    <string name="description">Description</string>
+    <string name="home_page">Home Page</string>
+    <string name="watchers">Watchers</string>
+    <string name="forks">Forks</string>
+    <string name="issues">Issues</string>
+    <string name="stars">Stars</string>
+    <string name="dialog_generic_error">Error trying to make API call</string>
+    <string name="dialog_http_400">Error: Bad Request</string>
+    <string name="dialog_http_500">Internal server error</string>
+    <string name="dialog_io_exception">Error IOException!</string>
+    <string name="status_dialog">Request Status</string>
+    <string name="dialog_retry_button">Retry</string>
+    <string name="dialog_negative_button">Cancel</string>
+    <string name="language_menu">Select a Language</string>
+    <string name="action_language">Language</string>
+    <string name="dialog_refreshed">Refreshed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_user_data">com.fran.bankuishchallenge.USER_DATA</string>
+</resources>

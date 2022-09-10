@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph.xml"
+    app:startDestination="@id/repoFragment">
+    <fragment
+        android:id="@+id/moreInfoFragment"
+        android:name="com.fran.bankuishchallenge.ui.fragments.MoreInfoFragment"
+        android:label="fragment_more_info"
+        tools:layout="@layout/fragment_more_info" >
+        <argument
+            android:name="repoData"
+            app:argType="com.fran.bankuishchallenge.model.Repository" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoFragment"
+        android:name="com.fran.bankuishchallenge.ui.fragments.RepoFragment"
+        android:label="GitHub Repositories"
+        tools:layout="@layout/fragment_repo">
+        <action
+            android:id="@+id/action_repoFragment_to_moreInfoFragment"
+            app:destination="@id/moreInfoFragment" />
+        <action
+            android:id="@+id/action_repoFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.fran.bankuishchallenge.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
